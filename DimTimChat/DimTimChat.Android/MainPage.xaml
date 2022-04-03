@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DimTimChat"
+             x:Class="DimTimChat.MainPage">
+
+    <StackLayout Spacing ="6">
+        <ScrollView x:Name ="MessagesLabelScrollView" Margin="0, 0, 0, 0">
+            <Label x:Name="MessagesLabel" Text="Введите ваше имя" />
+        </ScrollView>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+            <Editor x:Name ="MessageEditor"
+                HeightRequest = "85"
+                WidthRequest = "250"
+                Margin="0"/>
+            <Button x:Name="SendButton"
+                Clicked="SendButton_Clicked"
+                HeightRequest="75"
+                WidthRequest="75"
+                HorizontalOptions="End"
+                Text="↑"
+                FontSize="32"/>
+        </StackLayout>
+
+        <!-- Place new controls here -->
+
+
+    </StackLayout>
+
+</ContentPage>
